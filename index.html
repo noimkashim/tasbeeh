@@ -3,184 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasbeeh Counter</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Canadian Trade Blog</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #e8eaed;
-            background-image: url('https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-            padding: 20px;
-            border-radius: 10px; /* Rounded corners */
-            width: 300px; /* Fixed width */
-            max-width: 90%; /* Maximum width */
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Black shadow */
-        }
-
-        h1 {
-            margin-bottom: 20px;
-            color: #333; /* Dark text color */
-        }
-
-        #counter {
-            font-size: 48px;
-            margin-bottom: 20px;
-            color: #333; /* Dark text color */
-        }
-
-        .icon-button {
-            width: 50px;
-            height: 50px;
-            font-size: 24px;
-            border: none;
-            cursor: pointer;
-            background-color: #4CAF50; /* Green background color */
-            color: white; /* White text color */
-            border-radius: 5px; /* Rounded corners */
-            transition: background-color 0.3s; /* Smooth color transition */
-        }
-
-        .icon-button:hover {
-            background-color: #45a049; /* Darker green on hover */
-        }
-
-        .icon-button i {
             margin: 0;
             padding: 0;
-        }
-
-        .counter-buttons {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            font-weight: bold;
-            color: black; /* White text color */
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        footer a {
-            color: blueviolet; /* White link color */
-            text-decoration: none;
-            font-weight: bold;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            position: fixed;
-            top: 0;
             width: 100%;
-            font-weight: bold;
-            color: black; /* White text color */
+            background: #007ACC;
+            color: #fff;
+            padding: 10px 20px;
             text-align: center;
-            padding: 10px 0;
         }
-
-        header a {
-            color: blueviolet; /* White link color */
+        nav {
+            margin: 15px 0;
+            display: flex;
+            justify-content: center; /* Center the navigation links */
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
             text-decoration: none;
-            font-weight: bold;
+        }
+        .container {
+            width: 100%;
+            max-width: ;: 800px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            margin: 0;
+        }
+        .blog-links {
+            list-style: none;
+            padding: 0;
+        }
+        .blog-links li {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #007ACC;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column; /* Stack links vertically on small screens */
+            }
+            nav a {
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
 <body>
-  <header>
-    <h1>Tasbeeh Counter</h1>
-    <p>The "Tasbeeh Counter" is a simple yet powerful tool designed to assist individuals in keeping track of their repetitive prayers.</p>
-  </header>
-    <div class="container">
-        <h1>Tasbeeh Counter</h1>
-        <div id="counter">0</div>
-        <div class="counter-buttons">
-            <button class="icon-button" onclick="decrement()"><i class="fas fa-minus"></i></button>
-          
-            <button class="icon-button" onclick="reset()"><i class="fas fa-redo-alt"></i></button>
-            <button class="icon-button" onclick="increment()"><i class="fas fa-plus"></i></button>
-        </div>
-        
-       
-    </div>
-     <footer>
-        Built by <a href="https://facebook.com/noimkey" target="_blank">Noim Ahmed</a>.
-    </footer>
 
-    <script>
-        let countValue = localStorage.getItem('count') ? parseInt(localStorage.getItem('count')) : 0;
-        const counterElement = document.getElementById('counter');
-        const limit = 1000; // Maximum count limit
+<header>
+    <h1>Canadian Trade Blog</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-        updateCounter();
+<div class="container" id="home">
+    <h2>Welcome to Canadian Trade Blog</h2>
+    <p>Explore insights on trading with Canada, market trends, and effective business strategies.</p>
+    
+    <h3>Explore our blog:</h3>
+    <ul class="blog-links">
+        <li><a href="https://hitno.com/">https://hitno.com</a></li>
+        <li><a href="https://trocaperfeita.br.com/">https://trocaperfeita.br.com</a></li>
+        <li><a href="https://hitno.es/">https://hitno.es</a></li>
+        <li><a href="https://hitno.de/">https://hitno.de</a></li>
+        <li><a href="https://hitno.fr/">https://hitno.fr</a></li>
+        <li><a href="https://hitno.mx/">https://hitno.mx</a></li>
+        <li><a href="https://hitno.me/">https://hitno.me</a></li>
+        <li><a href="https://hitno.pl/">https://hitno.pl</a></li>
+        <li><a href="https://hitno.br.com/">https://hitno.br.com</a></li>
+        <li><a href="https://drom.rs/">https://drom.rs</a></li>
+        <li><a href="https://hitno1.com/">https://hitno1.com</a></li>
+        <li><a href="https://metamat.io/">https://metamat.io</a></li>
+        <li><a href="https://metamat.ai/">https://metamat.ai</a></li>
+        <li><a href="https://lojaglobal.br.com/">https://lojaglobal.br.com</a></li>
+        <li><a href="https://mercadovivo.br.com/">https://mercadovivo.br.com</a></li>
+        <li><a href="https://mercador.br.com/">https://mercador.br.com</a></li>
+        <li><a href="https://vendasexpress.br.com/">https://vendasexpress.br.com</a></li>
+        <li><a href="https://8888blog.com/">https://8888blog.com</a></li>
+        <li><a href="https://blogs108.com/">https://blogs108.com</a></li>
+        <li><a href="https://blogs888.com/">https://blogs888.com</a></li>
+        <li><a href="https://blogsaler.com/">https://blogsaler.com</a></li>
+        <li><a href="https://blogslbs.com/">https://blogslbs.com</a></li>
+        <li><a href="https://blogspp.com/">https://blogspp.com</a></li>
+        <li><a href="https://buyfromchinapp.com/">https://buyfromchinapp.com</a></li>
+        <li><a href="https://chinagoodsapp.com/">https://chinagoodsapp.com</a></li>
+        <li><a href="https://dealhubhub.com/">https://dealhubhub.com</a></li>
+        <li><a href="https://dealhubly.com/">https://dealhubly.com</a></li>
+        <li><a href="https://disconts.com/">https://disconts.com</a></li>
+        <li><a href="https://estate4us.com/">https://estate4us.com</a></li>
+        <li><a href="https://sale1one.com/">https://sale1one.com</a></li>
+        <li><a href="https://sale8888.com/">https://sale8888.com</a></li>
+        <li><a href="https://salechin.com/">https://salechin.com</a></li>
+        <li><a href="https://salechina1.com/">https://salechina1.com</a></li>
+        <li><a href="https://salelbs.com/">https://salelbs.com</a></li>
+        <li><a href="https://salerblog.com/">https://salerblog.com</a></li>
+        <li><a href="https://salespp.com/">https://salespp.com</a></li>
+        <li><a href="https://salhq.com/">https://salhq.com</a></li>
+        <li><a href="https://blogshb.com/">https://blogshb.com</a></li>
+    </ul>
+</div>
 
-        function count() {
-            if (countValue < limit) {
-                countValue++;
-                updateCounter();
-            }
-            checkLimit();
-        }
+<div class="container" id="about">
+    <h2>About Us</h2>
+    <p>At Canadian Trade Blog, we are dedicated to providing the latest insights and strategies for businesses looking to trade with Canada. Our team of experts offers valuable resources to help you navigate market trends and maximize your opportunities.</p>
+</div>
 
-        function reset() {
-            countValue = 0;
-            updateCounter();
-            checkLimit();
-        }
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like to get in touch, please email us at:</p>
+    <p><strong>contact@canadiantradeblog.com</strong></p>
+</div>
 
-        function increment() {
-            if (countValue < limit) {
-                countValue++;
-                updateCounter();
-            }
-            checkLimit();
-        }
+<footer>
+    <p>© 2023 Canadian Trade Blog. All rights reserved.</p>
+</footer>
 
-        function decrement() {
-            if (countValue > 0) {
-                countValue--;
-                updateCounter();
-            }
-            checkLimit();
-        }
+<script>
+    // JavaScript can be added here for interactive features
+    console.log("Welcome to Canadian Trade Blog!");
+</script>
 
-        function updateCounter() {
-            counterElement.textContent = countValue;
-            localStorage.setItem('count', countValue);
-            updateColor();
-        }
-
-        function updateColor() {
-            if (countValue > 0 && countValue % 33 === 0) {
-                counterElement.style.color = 'red'; // Change color to red every 33 counts
-            } else {
-                counterElement.style.color = '#333'; // Reset color to default
-            }
-        }
-
-        function checkLimit() {
-            if (countValue === limit) {
-                document.querySelectorAll('.icon-button').forEach(button => {
-                    button.disabled = true; // Disable all buttons when limit is reached
-                });
-            } else {
-                document.querySelectorAll('.icon-button').forEach(button => {
-                    button.disabled = false;
-                });
-            }
-        }
-    </script>
 </body>
 </html>
